@@ -1,0 +1,73 @@
+:root {
+  --bg-color: #111111;
+  --text-color: #ffffff;
+
+  --gradient-color-1: #c6f1f7;
+  --gradient-color-2: #f983e9;
+  --gradient-color-3: #b877ff;
+  --gradient-color-4: #c2e9cd;
+
+  --ellipse-color: #e28224;
+
+  --selectionpadding: 6rem 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "inter", "unbounded", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading-gradient {
+  font-size: 3rem;
+}
+
+.gradient-text-color {
+  background: linear-gradient(
+    to right,
+    var(--gradient-color-1) 0%,
+    var(--gradient-color-2) 36%,
+    var(--gradient-color-3) 74%,
+    var(--gradient-color-4) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.gradient-stroke {
+  width: 40px;
+  height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+
+  border: 3px solid;
+}
+
+.gradient-box1 {
+  border-image: linear-gradient(to right, #e28224 0%, #e2822400 92%) 1;
+}
+
+.gradient-box2 {
+  border-image: linear-gradient(to left, #e28224 0%, #e2822400 92%) 1;
+}
